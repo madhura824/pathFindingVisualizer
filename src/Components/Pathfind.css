@@ -1,0 +1,82 @@
+.rowWrapper{
+    display: flex;
+}
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    text-align: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray background color */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 20px; /* Padding for the header */
+    background-color: #3498db; /* Header background color */
+    color: #fff; /* Header text color */
+  }
+  
+  .visualize-drop-down,
+  .speed-drop-down,
+  .regenerate {
+    margin: 0 10px;
+  }
+  
+  /* Styling for the buttons */
+  .visualize-drop-down,
+  .regenerate {
+    background-color: #2ecc71; /* Green color for primary buttons */
+    color: #fff; /* Text color for buttons */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Styling for dropdown */
+  .speed-drop-down {
+    color: #3498db; /* Text color for dropdown toggle */
+  }
+  
+  /* Styling for the grid and other components */
+  .gridWithNode {
+    /* Add styling for grid */
+    border: #3498db;
+  }
+  
+  .resultSection {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333; /* Text color for result section */
+  }
+  .info{
+    display: flex;
+    
+    align-items:center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #92cbf1;
+    height: 60px;
+    margin-bottom: 40px;
+  }
+
+  .curved-border-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #63baf5; /* Blue color */
+    border-radius: 20px;
+    color: #ffffff; /* White text color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+    width: auto; /* Set the width to auto or adjust as needed */
+    height: 40px;
+    text-align: center;
+  }
+  
