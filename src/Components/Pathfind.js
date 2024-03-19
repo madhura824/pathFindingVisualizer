@@ -169,9 +169,10 @@ const Pathfind = () => {
     setPath(path.path);
     setVisitedNodes(path.visited || []);
     
-    console.log("Path: "+Path)
-    console.log("visited nodes "+Visited_Nodes)
-  
+    // console.log("Path: "+Path)
+    // console.log("visited nodes "+Visited_Nodes)
+    set_no_nodes_visited(Visited_Nodes.length);
+    setTime(path.time)
     for (let i = 0; i < Visited_Nodes.length; i++) {
       setTimeout(() => {
         const node = Visited_Nodes[i];
@@ -184,7 +185,7 @@ const Pathfind = () => {
       visualizeShortestPath(Path);
     }, execution_speed * Visited_Nodes.length+10);
 
-    setTime(path.time)
+   
   };
 
 

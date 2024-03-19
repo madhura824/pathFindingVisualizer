@@ -41,7 +41,7 @@ function Astar(start_node, end_node) {
 
       //console.log("visited in the astar: " + visited);
       path=path.reverse()
-      let time=end_time-start_time
+      let time=end_time-start_time;
       return { path, visited ,time}; //this is an object
     }
 

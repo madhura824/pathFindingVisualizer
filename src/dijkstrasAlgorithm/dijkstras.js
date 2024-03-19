@@ -31,6 +31,7 @@ const Dijkstras = (startNode, end_node) => {
       visited_set.forEach((node) => visited.push(node));
       path=path.reverse()
       let time=end_time-start_time
+     // console.log("Time "+ time);
       return { path, visited ,time}; //this is an object
     }
 

@@ -7,13 +7,13 @@
 .node-start {
   background-color: rgb(116, 249, 116);
   
-  content: url('C:/Users/DELL/Desktop/path-visualizer-project/src/location.png'); /* Replace 'path-to-your-icon.png' with the actual path to your icon image */
+  content: url('E:/Old Harddisk Data Recovery/Desktop/path-visualizer-project/src/location.png'); /* Replace 'path-to-your-icon.png' with the actual path to your icon image */
   
  
 }
 .node-end{
     background-color: rgb(233, 47, 47);
-    content: url('C:/Users/DELL/Desktop/path-visualizer-project/src/target.png');
+    content: url('E:/Old Harddisk Data Recovery/Desktop/path-visualizer-project/src/location.png');
 }
 .node-visited {
     animation-name: visitedAnimation;

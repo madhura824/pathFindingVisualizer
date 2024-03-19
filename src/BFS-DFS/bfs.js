@@ -4,23 +4,26 @@ const bfs = (startNode, endNode) => {
     let visited = [];
     let start_time=Date.now()
     let end_time=Date.now()
-let time
+let time=0;
     openSet.push(startNode);
     visited.push(startNode);
   
-    console.log("OPENSET" + openSet.length);
-    console.log(openSet);
+    // console.log("OPENSET" + openSet.length);
+    // console.log(openSet);
   
     while (openSet.length > 0) {
       let current_node = openSet[0];
       if(current_node==endNode) {
+        end_time=Date.now();
+        time=end_time-start_time
+       //console.log("start time  " + start_time+ " End time "+end_time);
         break
- time=end_time-start_time
+ 
       }
       if (current_node && current_node.neighbours) {
         let cur_neighbours = current_node.neighbours;
   
-        console.log(current_node);
+       // console.log(current_node);
         openSet = openSet.filter((element) => element !== current_node);
   
         for (let i = 0; i < cur_neighbours.length; i++) {
@@ -41,7 +44,8 @@ let time
     }
   
     let path = reconstruction(endNode);
-    console.log(path);
+    //console.log(path);
+    console.log("Time "+ time);
     return { path, visited,time };
   };
   

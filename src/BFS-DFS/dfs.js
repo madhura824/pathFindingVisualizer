@@ -28,8 +28,8 @@ class Stack {
     stack.push(startNode);
     
   
-    console.log("STACK: " + stack.items.length);
-    console.log(stack.items);
+   // console.log("STACK: " + stack.items.length);
+   // console.log(stack.items);
   
     while (!stack.isEmpty()) {
        let current_node = stack.pop();
@@ -45,7 +45,7 @@ class Stack {
       
         let cur_neighbours = current_node.neighbours;
   
-        console.log(current_node);
+       // console.log(current_node);
   
         for (let i = 0; i < cur_neighbours.length; i++) {
           if (
@@ -61,9 +61,9 @@ class Stack {
     }
   
     let path = reconstruction(endNode);
-    console.log(path);
+   // console.log(path);
 
-    console.log("start : " +start_time+" end time" +end_time)
+   // console.log("start : " +start_time+" end time" +end_time)
     let time=end_time-start_time
     return { path, visited ,time};
   };
