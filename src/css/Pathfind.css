@@ -1,0 +1,144 @@
+  .rowWrapper{
+      display: flex;
+  }
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    
+    margin:20px 0px;
+  
+  overflow-x: auto;
+  }
+  
+.gridContainer {
+  display: inline-block;
+  overflow: auto;
+  max-width: 100vw;
+}
+
+ .header {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 10px; 
+
+  width: 100%;
+  padding: 15px 10px;
+}
+
+  .header-element {
+    min-width: 150px; 
+
+  text-align: center;
+  
+  display: flex;         
+  align-items: center;   
+  justify-content: center; 
+  text-align: center;    
+}
+  
+
+  
+  
+  .gridWithNode {
+    border: #3498db;
+  }
+  
+  .resultSection {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333; 
+  }
+.info {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  width: 100%;
+  padding: 10px;
+
+  height: auto;      
+}
+  .info > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 6px 10px;
+
+  min-width: 120px;
+  width: auto;
+
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  white-space: nowrap;
+}
+
+  .curved-border-display {
+    background-color: #63baf5; 
+    border-radius: 5px;
+    border: 0px;
+    color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+
+  }
+
+.start-visualization,
+.regenerate  {
+  background: linear-gradient(135deg, #ff7a18, #ffb347); 
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(255, 122, 24, 0.4);
+  transition: all 0.25s ease;
+}
+
+
+.start-visualization:hover,
+.regenerate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 122, 24, 0.6);
+}
+
+.start-visualization:active,
+.regenerate:click  {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(255, 122, 24, 0.4);
+}
+  @media (max-width: 768px) {
+  .header {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .header-element {
+    flex: 1 1 45%; 
+    min-width: unset;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .header-element {
+    flex: 1 1 45%; 
+    min-width: unset;
+  }
+}

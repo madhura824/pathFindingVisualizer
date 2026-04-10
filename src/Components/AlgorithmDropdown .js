@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
-import AlgorithmInfoModal from "./AlgorithmInfoModal"; // Import the modal component
+import AlgorithmInfoModal from "./AlgorithmInfoModal";
 
 const AlgorithmDropdown = () => {
   const [selectedAlgo, setSelectedAlgo] = useState(null);
@@ -15,7 +15,7 @@ const AlgorithmDropdown = () => {
 
   return (
     <>
-      <Dropdown className="speed-drop-down">
+      <Dropdown className="speed-drop-down header-element">
         <Dropdown.Toggle variant="success" id="dropdown-basic">
           Get More Information
         </Dropdown.Toggle>
@@ -31,7 +31,7 @@ const AlgorithmDropdown = () => {
             Bredth First Search
           </Dropdown.Item>
           <Dropdown.Item onClick={() => getAlgoInfo(4)}>
-           Depth First Search
+            Depth First Search
           </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
@@ -39,6 +39,7 @@ const AlgorithmDropdown = () => {
       {selectedAlgo && (
         <AlgorithmInfoModal
           algorithmChoice={selectedAlgo}
+
           onHide={handleCloseModal}
         />
       )}

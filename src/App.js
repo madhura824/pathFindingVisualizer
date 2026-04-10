@@ -1,14 +1,16 @@
 
-import './App.css';
+import './css/App.css';
 import Pathfind from './Components/Pathfind';
-import React, { useEffect, useState } from 'react'
+import PathfindContextProvider from './Contexts/PathfindContextProvider';
+
 
 function App() {
 
   return (
     <div className="App">
-      
-     <Pathfind/>
+    <PathfindContextProvider>
+      <Pathfind/>
+    </PathfindContextProvider>
 
     </div>
   );
